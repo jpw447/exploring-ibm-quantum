@@ -1,24 +1,21 @@
-These scripts were written as part of a summer internship project completed under Professor
-Andrew Armour at the University of Nottingham, between June and September 2022, in which we
-investigated IBM's quantum computer resources and attempted to emulate them with Python code.
-
 Each file contains the functions used to solve the ODEs, solutions to the ODEs, or frequency sweeps,
 of various forms - constant (constant envelope, no oscillation), harmonic (constant envelope, 
 oscillating signal), and Gaussian (Gaussian envelope, oscillating signal).
 
----Data Folder---
+## Data Folder
+---
 Contains data from IBMQ machines, performing experiments as detailed in Qiskit Chapter 6.1
 (as of time of writing 02/09/2022).
 This experiment can be found in "Pulse Control.ipynb", which is a Jupyter notebook designed to
 be run in IBMQ's Quantum Experience Lab, and NOT a regular Jupyter notebook. Note that the backend
 being accessed may need to be changed, depending on what's available.
 
----Required Libraries---
-Numpy
-Matplotlib
-SciPy
+## Requirements
+---
+`numpy`, `scipy` and `matplotlib`.
 
----File and Contents---
+## File and Contents
+---
 Constant Pulse.py --- Solving the ODEs for a square pulse (probability vs time).
 constant_pulse_funcs.py --- Contains functions to solve the square pulse ODEs. Use this as a library.
 Gaussian Frequency Sweep.py --- Performs frequency, amplitude and standard deviation sweeps.
